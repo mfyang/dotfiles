@@ -15,6 +15,7 @@ alias grep='grep --color'
 case "$OSTYPE" in
 linux*)
 	alias ls='ls --color=auto'
+	alias view="vim -R"
 
     export PS1="\[\033[01;32m\]\u@${HOSTNAME} \[\033[01;34m\]\W \$ \[\033[00m\]"
     ;;
