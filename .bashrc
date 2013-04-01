@@ -28,4 +28,6 @@ darwin*)
     ;;
 esac
 
+set -o vim
+
 PATH=$PATH:$HOME/bin:$HOME/.rvm/bin:/usr/local/sbin # Add RVM to PATH for scripting
