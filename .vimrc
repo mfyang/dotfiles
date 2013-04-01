@@ -41,6 +41,7 @@ map Q gq
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
   syntax on
+  colorscheme torte
   set hlsearch
 endif
 
@@ -73,7 +74,7 @@ else
 endif " has("autocmd")
 
 set tabstop=4
-set sw=4 sts=4 noexpandtab
+set sw=4 sts=4 expandtab
 
 set noai
 set spelllang=en_us,medical
@@ -81,7 +82,7 @@ set spelllang=en_us,medical
 :imap <F4> <ESC>:setlocal spell! spelllang=en_us,medical <cr>
 
 set textwidth=78
-set nowrap
+"set nowrap
 "set whichwrap=b,s,<,>,[,]
 
 set shellslash
